@@ -1,0 +1,141 @@
+body{padding: 0;margin: 0;min-height: 100vh;font-weight: 400;line-height: 1.5;font-family: "JetBrains Mono", monospace;position: relative;overflow: hidden;overflow-y: auto;}
+p{margin: 0;}
+a{color: inherit;text-decoration: none;transition: all 0.4s linear;}
+img{display: block;width: 100%;}
+h1, h2, h3, h4, h5, h6{margin: 0;}
+
+.pdf_content{font-family: "JetBrains Mono", monospace;}
+/* .pdf_main{max-width: 598px;margin: 0 auto;} */
+.main_box{position: relative;max-width: 692px;margin: 0 auto;}
+.back_img{width: 100%;height: 100%;}
+.top_box{position: absolute;top: 0;left: 0;width: 100%;display: flex;align-items: center;justify-content: space-between;margin-top: 40px;}
+.top_box img{margin-left: 40px;max-width: 150px;}
+.top_box span{margin-right: 40px;color: #FFF;font-size: 14px;line-height: 24px;letter-spacing: 2.52px;text-transform: uppercase;}
+.title_box{position: absolute;top: 297px;left: 0;padding: 0 40px;}
+.title_box span{display: block;color: #FFF;font-size: 22px;font-weight: 400;line-height: 28px;letter-spacing: -0.6px;margin-bottom: 16px;}
+.title_box h1{color: #FFF;font-size: 54px;font-weight: 700;line-height: 68px;letter-spacing: -3.24px;text-transform: uppercase;}
+.pdf_box + .pdf_box{margin-top: 20px;}
+
+.p_40{padding: 40px;}
+.plr_40{padding-left: 40px;padding-right: 40px;}
+.absolute_div{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.title_big{padding: 40px;}
+.title_big h1{color: #292524;font-size: 48px;font-weight: 700;line-height: 56px;letter-spacing: -1.92px;text-transform: uppercase;}
+.chapter_box a{display: flex;align-items: center;justify-content: space-between;padding: 12px 16px;border-radius: 4px;border: 0.6px solid #FEFEFE;}
+.chapter_box p{flex: 0 0 435px;color: #44403C;font-size: 14px;line-height: 16px;font-weight: 300;letter-spacing: -0.24px;text-transform: uppercase;}
+.page_number{display: inline-flex;}
+.chapter_box span{flex: 0 0 25px;text-align: right;color: #292524;font-size: 14px;font-weight: 300;line-height: 20px;letter-spacing: -0.28px;padding: 0 16px;border-right: 1px solid #fff;margin-right: 16px;}
+.chapter_box img{width: 13px;}
+.chapter_box + .chapter_box{margin-top: 8px;}
+.footer{position: absolute;left: 0;bottom: 18px;width: 100%;background: transparent;text-align: inherit;padding: 0;margin: 0;}
+.footer_items{display: flex;align-items: center;justify-content: space-between;color: #292524;font-size: 12px;font-weight: 300;line-height: 20px;letter-spacing: -0.24px;margin: 0 40px;padding-top: 10px;border-top: 1px solid #E7E5E4;}
+
+.journey_box{margin: 16px;overflow: hidden;position: relative;height: 372px;}
+.journey_txt{display: flex;flex-direction: column;align-items: flex-end;padding: 56px 40px;text-align: right;}
+.journey_txt h2{color: #FFF;font-size: 28px;font-weight: 700;line-height: 38px;letter-spacing: -1.4px;text-transform: uppercase;}
+.journey_txt p{color: #E7E7E7;font-size: 14px;font-weight: 300;line-height: 16px;letter-spacing: -0.24px;text-transform: uppercase;padding: 12px 16px;border-radius: 4px;border: 0.6px solid #A176FF;width: 440px;margin-top: 16px;}
+.journey_box + .journey_box .journey_txt{align-items: flex-start;padding: 75px 40px;text-align: left;}
+.journey_box + .journey_box .journey_txt p{color: #D6D6D6;border-color: #353535;}
+
+.chapter_title{width: 295px;position: absolute;left: 180px;bottom: 160px;}
+.chapter_title span{display: block;color: #000;font-size: 26px;font-weight: 500;line-height: 44px;letter-spacing: -1.04px;text-transform: uppercase;margin-bottom: 20px;}
+.chapter_title h1{color: #000;font-size: 36px;font-weight: 700;line-height: 38px;letter-spacing: -1.44px;text-transform: uppercase;}
+
+.text_box h2{color: #292524;font-size: 20px;font-weight: 700;line-height: 24px;letter-spacing: -0.8px;text-transform: uppercase;}
+.text_box + .text_box, .relative_title + .text_box{padding-top: 30px;}
+.text_box h2 + .txt_box, .txt_box + .txt_box{margin-top: 25px;}
+.txt_box{padding-left: 40px;position: relative;}
+.txt_box h5{color: #000;font-size: 18px;font-weight: 500;line-height: 24px;opacity: 0.8;font-family: "Outfit", sans-serif;position: relative;}
+.title_before, .text_before{position: absolute;top: 12px;left: -42px;width: 30px;transform: translateY(-50%);}
+.txt_box p{color: #57534E;font-size: 16px;font-weight: 300;line-height: 22px;opacity: 0.8;font-family: "Outfit", sans-serif;}
+.txt_box h5 + p{margin-top: 8px;}
+.txt_box p + p{margin-top: 15px;}
+.max_big{width: 354px;}
+
+.p_8{padding: 8px}
+.less_space .footer_items{color: #FFF;margin: 0 16px;}
+.conclution_title{background: #8559EA;padding: 32px;border-radius: 12px;}
+.conclution_title h1{color: #FFF;font-size: 36px;font-weight: 700;line-height: 38px;letter-spacing: -1.44px;text-transform: uppercase;}
+.reflecting_box{padding: 62px 32px 48px !important;border-radius: 12px;border: 0.5px solid #FFF;background: rgba(0, 0, 0, 0.67);backdrop-filter: blur(17.5px);margin-top: 8px;}
+.reflecting_box.text_box h2{color: #fff;}
+.reflecting_box .txt_box h5{color: #fff;font-weight: 400;}
+.reflecting_box .txt_box h5 + h5{margin-top: 15px;}
+
+.work_img{padding: 16px 16px 0;}
+.workbook_box .chapter_title{position: relative;left: auto;bottom: auto;margin-top: 50px;width: 380px;}
+.workbook_box .chapter_title span{color: #fff;text-transform: inherit;font-weight: 400;margin-bottom: 12px;}
+.workbook_box .chapter_title h1{color: #fff;font-size: 40px;line-height: 44px;letter-spacing: -1.6px;}
+
+.intro_title{border-radius: 24px;border: 0.6px solid #D7D3D0;background: #FFF;padding: 40px;}
+.intro_title h1{color: #292524;font-size: 40px;font-weight: 700;line-height: 44px;letter-spacing: -1.6px;text-transform: uppercase;}
+.intro_journey{height: auto;}
+.intro_journey .journey_txt{padding: 40px !important;align-items: flex-start;text-align: left;}
+.intro_journey .journey_txt p{width: 453px;}
+
+.activity_box{padding: 30px 40px 40px;}
+.relative_title{position: relative;width: auto !important;left: auto !important;bottom: auto !important;}
+.topic_box{padding: 32px 16px 32px 64px;}
+.text_box h2 + .topic_box{margin-top: 0;}
+.topic_box p{position: relative;margin: 0 49px;}
+.topic_box h5 + p{margin-top: 16px;}
+.topic_box p + p{margin-top: 12px;}
+.mt_30{margin-top: 30px;}
+.topic_box h5 span{color: #717171;font-size: 12px;font-weight: 400;}
+
+.content_img{float: right;width: 49%;margin: 0 0 15px 15px;border-radius: 10px;overflow: hidden;}
+.text_box p + img{border-radius: 10px;overflow: hidden;}
+
+
+@media(max-width: 767px){
+    .main_box{max-width: 100%;display: flex;}
+    .back_img{position: absolute;top: 0;left: 0;z-index: -1;}
+    .absolute_div{position: relative;}
+    .footer{position: relative;left: auto;bottom: auto;}
+    .footer_items, .less_space .footer_items{margin: 40px 15px 0;padding-bottom: 15px;}
+
+    .mainb0x{padding: 0;}
+    .mainb0x .back_img, .chapter_titlebox .back_img{position: relative;top: auto;left: auto;}
+    .mainb0x .top_box{margin-top: 15px;padding: 0 15px;}
+    .mainb0x .title_box{top: 200px;padding: 15px;}
+    .top_box img{margin-left: 0;max-width: 130px;}
+    .top_box span{margin-right: 0;letter-spacing: 1.52px;}
+    .title_box span{font-size: 16px;line-height: 16px;margin-bottom: 15px;}
+    .title_box h1{font-size: 34px;line-height: 1.1;letter-spacing: -2px;}
+    .chapter_box a{flex-wrap: wrap;align-items: flex-start;padding: 12px 12px;border-radius: 2px;}
+    .chapter_box p{flex: 0 0 74%;line-height: 18px;}
+    .chapter_box span{padding: 0 10px;margin-right: 10px;}
+    .journey_box{height: auto;}
+    .journey_txt, .journey_box + .journey_box .journey_txt{padding: 36px 20px;}
+    .journey_txt h2{font-size: 22px;line-height: 1.3;letter-spacing: -1px;}
+    .journey_txt h2 br, .journey_txt p br{display: none;}
+    .journey_txt p{padding: 10px 15px;margin-top: 12px;width: 100% !important;}
+    .p_40{padding: 20px 15px;}
+    .content_img{float: none;width: 100%;margin: 0 0 15px;border-radius: 5px;}
+    .title_big{padding: 20px 15px;}
+    .title_big h1{font-size: 26px;line-height: 1.2;letter-spacing: -1.5px;}
+    .plr_40{padding-left: 15px;padding-right: 15px;}
+    .activity_box{padding: 20px 15px 15px;}
+    .conclution_title{padding: 18px 15px;border-radius: 8px;}
+    .conclution_title h1{font-size: 26px;line-height: 1.2;letter-spacing: -1px;}
+    .reflecting_box{padding: 25px 18px 25px !important;border-radius: 8px;}
+    .text_box h2{font-size: 18px;line-height: 1.3;}
+    .txt_box{padding-left: 38px;}
+    .txt_box h5{font-size: 16px;line-height: 1.5;}
+    .txt_box p{font-size: 14px;}
+    /* .text_box h2 + .txt_box, .txt_box + .txt_box{margin-top: 20px;} */
+    .title_before, .text_before{top: 15px;left: -37px;width: 24px;}
+    .p_40 + .footer .footer_items{margin-top: 25px;}
+    .text_box p + img{border-radius: 6px;}
+    .chapter_titlebox .absolute_div{position: absolute;}
+    .chapter_titlebox .footer{position: absolute;left: 0;bottom: 0;}
+    .chapter_title{width: 242px;left: 76px;bottom: 85px;}
+    .chapter_title h1{font-size: 22px;line-height: 1.2;}
+    .chapter_title span{font-size: 16px;line-height: 1;margin-bottom: 15px;}
+    .workbook_box .chapter_title{margin-top: 40px;width: 100%;}
+    .workbook_box .chapter_title h1, .intro_title h1{font-size: 30px;line-height: 1.2;}
+    .intro_title{border-radius: 10px;padding: 15px 15px;}
+    .intro_journey .journey_txt{padding: 30px 20px !important;}
+    .relative_title + .text_box{padding-top: 10px;}
+    .topic_box{padding: 20px 15px 20px 38px;}
+    .topic_box p{margin: 0 0 0 38px;}
+}
