@@ -1761,7 +1761,7 @@ class HomeController extends Controller
 
         EOD;
 
-        $response = Http::withToken('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')->post('https://api.openai.com/v1/images/generations', [
+        $response = Http::withToken(env('OPENAI_API_KEY_CHAT'))->post('https://api.openai.com/v1/images/generations', [
             'prompt' => $query,
             'model' => 'dall-e-3',
             'n' => 1,
@@ -1811,7 +1811,7 @@ class HomeController extends Controller
         EOD;
 
 
-        $response = Http::withToken('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')->post('https://api.openai.com/v1/images/generations', [
+        $response = Http::withToken(env('OPENAI_API_KEY_CHAT'))->post('https://api.openai.com/v1/images/generations', [
             'prompt' => $query,
             'model' => 'dall-e-3',
             'n' => 1,
@@ -1857,7 +1857,7 @@ class HomeController extends Controller
         EOD;
 
 
-        $response = Http::withToken('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')->post('https://api.openai.com/v1/images/generations', [
+            $response = Http::withToken(env('OPENAI_API_KEY_CHAT'))->post('https://api.openai.com/v1/images/generations', [
             'prompt' => $query,
             'model' => 'dall-e-3',
             'n' => 1,
@@ -1902,7 +1902,7 @@ class HomeController extends Controller
         EOD;
 
 
-        $response = Http::withToken('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')->post('https://api.openai.com/v1/images/generations', [
+        $response = Http::withToken(env('OPENAI_API_KEY_CHAT'))->post('https://api.openai.com/v1/images/generations', [
             'prompt' => $query,
             'model' => 'dall-e-3',
             'n' => 1,
