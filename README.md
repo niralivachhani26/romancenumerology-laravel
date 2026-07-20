@@ -63,7 +63,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 
 
-# AI & Cloud Storage Configuration
+##### AI & Cloud Storage Configuration
 OPENAI_API_KEY=your_openai_api_key_here
 
 REPLICATE_API_TOKEN=your_replicate_token_here
