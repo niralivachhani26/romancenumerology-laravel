@@ -8,7 +8,7 @@ A full-stack enterprise web application built with **Laravel** that combines ast
 
 * **Algorithmic Numerology Engine:** Custom mathematical logic calculating core numbers (Life Path, Expression, Soul Urge, and Destiny) using birth dates and name mapping.
 * **Dynamic AI Prompt Generation:** Dynamically maps numerology traits into detailed prompts and triggers async requests to generative AI image APIs (OpenAI DALL-E / Stability AI / Replicate).
-* **Cloud Storage Integration:** Directly connects with cloud asset storage (AWS S3) for secure, fast storage and delivery of generated sketch images.
+* **Payment Integration:** Secure payment gateway integration for seamless online payments, subscription management, and transaction processing.
 * **Automated CI/CD Workflows:** Equipped with pre-configured **GitHub Actions CI/CD** pipelines running automated unit tests (`php artisan test`) and zero-downtime deployment steps upon push.
 * **Secure Environment Variables:** Strictly isolates API keys and cloud credentials using `.env` environment loading to keep secrets out of source control.
 
@@ -21,6 +21,7 @@ A full-stack enterprise web application built with **Laravel** that combines ast
 | **Backend Framework** | ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) |
 | **Database Engine** | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
 | **Generative AI** | OpenAI API |
+| **Payment Gateway** | ![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white) (Cards, UPI, Digital Wallets) |
 | **DevOps & Testing** | GitHub Actions (CI/CD) / PHPUnit |
 
 ---
