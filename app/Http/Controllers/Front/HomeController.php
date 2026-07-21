@@ -1335,7 +1335,7 @@ class HomeController extends Controller
             require_once base_path() . '/public/stripe-php/init.php';
             /*Stripe Code Start*/
             // Set your secret key (use your actual secret key from the Stripe Dashboard)
-            \Stripe\Stripe::setApiKey('sk_test_hE7Q5lgd4iUQ0gtgxY5RvUCE'); // Replace with your Stripe Secret Key
+            \Stripe\Stripe::setApiKey(env("STRIPE_KEY_CHAT")); // Replace with your Stripe Secret Key
             // Create a Checkout session to initiate the payment process
             try {
                 // Create a new checkout session
@@ -1546,7 +1546,7 @@ class HomeController extends Controller
                 CURLOPT_POSTFIELDS => json_encode($post_data),
                 CURLOPT_HTTPHEADER => array(
                     "Content-Type: application/json",
-                    "Authorization: Bearer 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"
+                    "Authorization: Bearer " . env('OPENAI_API_KEY_CHAT'),
                 ),
             ));
             $response = curl_exec($curl);

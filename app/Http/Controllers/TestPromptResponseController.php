@@ -24,37 +24,7 @@ class TestPromptResponseController extends Controller
     /**
      * Display a listing of the resource.
      */
-    // public function store(Request $request){
-    //     try{
-    //         $query =   <<<EOD
-    //                     $request->prompt
-    //                     EOD;
-
-    //         $response = Http::withToken(env('OPENAI_API_KEY_CHAT'))->post('https://api.openai.com/v1/images/generations', [
-    //             'prompt' => $query,
-    //             'model' => 'dall-e-3',
-    //             'n' => 1,
-    //             'size' => '1024x1024',
-    //         ]);
-    //         $imageUrl = $response->json()['data'][0]['url'];
-    //         $imageData = self::saveImage($imageUrl);
-
-    //         DB::table('test_sketch_prompts')->insert([
-    //             'image_path' => 'soul-sketch/'.$imageData['filename'],
-    //         ]);
-    //        $imageUrl = 'test-sketch/'.$imageData['filename'];
-    //         // return response()->json($imageData);
-    //         return response()->json([
-    //             'success' => true,
-    //             'message' => 'Sketch generated successfully!',
-    //             'image_path' => asset($imageUrl), // This is the URL that the frontend will use
-    //         ]);
-
-    //     }catch(Exception $e) {
-    //         Log::error($e->getMessage().'in line:'. $e->getLine());
-    //         // return response()->json($e->getMessage().'in line:'. $e->getLine());
-    //     }
-    // }
+   
     public function store(Request $request){
         try{
             $query =   <<<EOD
