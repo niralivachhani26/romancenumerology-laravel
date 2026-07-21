@@ -1,4 +1,4 @@
-# Romance Numerology & AI Soulmate Sketch Platform
+# Laravel Numerology & AI Soulmate Sketch Platform
 
 A full-stack enterprise web application built with **Laravel** that combines astrological numerology algorithms with generative AI image models. The platform calculates personalized numerology metrics (Life Path, Expression, and Soul Urge numbers) and generates automated, high-resolution AI soulmate sketches based on user profile inputs.
 
